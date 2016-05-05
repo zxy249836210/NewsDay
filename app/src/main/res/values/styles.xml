@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/btn_bottom</item>
+        <item name="colorPrimaryDark">@color/btn_bottom</item>
+        <item name="colorAccent">@color/btn_bottom</item>
+
+
+
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="bottom_radio">
+
+        <!--android:textColor="@drawable/bottom_bt_text_color"-->
+        <!-- 内部组件的排列 -->
+        <item name="android:gravity">center</item>
+        <!-- 背景样式 -->
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 宽度 -->
+        <item name="android:layout_width">0dp</item>
+        <!-- 高度 -->
+        <item name="android:layout_height">wrap_content</item>
+        <!-- 设置RadioButton的原来图片为空 -->
+        <item name="android:button">@null</item>
+        <!-- 与其他组件宽度占相同比重 -->
+        <item name="android:layout_weight">1.0</item>
+        <!-- 底部的空隙 -->
+        <item name="android:paddingBottom">2.0dip</item>
+        <!-- 顶部的空隙 -->
+        <item name="android:paddingTop">2.0dip</item>
+        <!-- 文字的大小 -->
+        <item name="android:textSize">11dip</item>
+        <!-- 文字的颜色 -->
+        <item name="android:textColor">@drawable/gadio_text_color</item>
+        <item name="android:text">文字</item>
+        <item name="android:checkable">true</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.NoActionBar.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

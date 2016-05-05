@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:id="@+id/id_tool_bar"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerlayou"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+        android:orientation="vertical"
+        >
+    <!-- android:elevation="5dp" 加上阴影-->
+        <FrameLayout
+            android:id="@+id/main_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+        </FrameLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/add_more_background"
+            android:layout_marginBottom="5dp"
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/bottom_radio"
+                android:drawableTop="@drawable/gadio_src_news"
+                android:text="资讯"
+                android:id="@+id/main_radio_new"
+                android:checked="true"/>
+
+            <RadioButton
+                style="@style/bottom_radio"
+                android:drawableTop="@drawable/gadio_src_collect"
+                android:text="热点"
+                android:id="@+id/main_radio_about" />
+
+            <RadioButton
+                style="@style/bottom_radio"
+                android:drawableTop="@drawable/gadio_src_find"
+                android:text="搜索"
+                android:id="@+id/main_radio_user" />
+        </RadioGroup>
+
+</LinearLayout>
+
+    <!--DrawerLayout Content-->
+<android.support.design.widget.NavigationView
+    android:id="@+id/navigation_view"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    app:headerLayout="@layout/drawer_header"
+    app:menu="@menu/drawer"
+    >
+</android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+
+</LinearLayout>
